@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <LangVersion>11</LangVersion>
+    <PackageId>Salt.ProcessLauncher</PackageId>
+    <Description>Launcher for external processes (via System.Diagnostics.Process)</Description>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <Authors>Zhivov Oleg A.</Authors>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <RepositoryType>Github</RepositoryType>
+    <RepositoryUrl>https://github.com/ZhivovOleg/Salt.ProcessLauncher</RepositoryUrl>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugType>full</DebugType>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+  </PropertyGroup>
+</Project>
